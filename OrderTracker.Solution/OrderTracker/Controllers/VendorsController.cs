@@ -21,7 +21,10 @@ namespace OrderTracker.Controllers
       return RedirectToAction("Index");
     }
 
-    // [HttpGet("/vendors/new")]
-    // public ActionResult 
+    [HttpGet("/vendors/new")]
+    public ActionResult New()
+    {
+      return View();
+    }
   }
 }
