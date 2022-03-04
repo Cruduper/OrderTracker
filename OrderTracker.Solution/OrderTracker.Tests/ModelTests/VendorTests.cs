@@ -62,17 +62,18 @@ namespace OrderTracker.Tests
       CollectionAssert.AreEqual(vendList, Vendor.GetAll());
     }
 
-    // [TestMethod]
-    // public void ClearAll_ClearsAllVendorInstancesInVendorsField_0()
-    // {
+    [TestMethod]
+    public void ClearAll_ClearsAllVendorInstancesInVendorsField_0()
+    {
     
-    //   Vendor newVendor0 = new Vendor("a name0", "a description0");
-    //   Vendor newVendor1 = new Vendor("a name1", "a description1");
+      Vendor newVendor0 = new Vendor("a name0", "a description0");
+      Vendor newVendor1 = new Vendor("a name1", "a description1");
 
-    //   List<Vendor> vendList = new List<Vendor>{newVendor0, newVendor1};
+      List<Vendor> emptyList = new List<Vendor>{};
+      //Vendor.ClearAll();
 
-    //   Assert.AreEqual(3. Vendor.GetAll());
-    // }
+      CollectionAssert.AreEqual(emptyList, Vendor.GetAll());
+    }
 
     // [TestMethod]
     // public void VendorConstructor_ChecksThatPreviousTestedInstancesOfVendorsAreStoredInVendorsField_VendorsCountEquals3AndAllPropertiesInAll3InstancesHaveExpectedValues()
