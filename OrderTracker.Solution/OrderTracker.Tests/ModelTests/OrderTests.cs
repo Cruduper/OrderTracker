@@ -13,7 +13,7 @@ namespace OrderTracker.Tests
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
       Order newOrder = new Order("Blue Monday", "I'm definitely not the first one to have made this joke", 3.99, "7 March 1983");
-      Assert.AreEqual(typeof(int), newOrder.GetType());
+      Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
 
