@@ -16,6 +16,67 @@ namespace OrderTracker.Tests
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
+    [TestMethod]
+    public void OrderConstructor_CorrectlySetsTitleInConstructor_CorrectTitleValue()
+    {
+      string titl = "New Order";
+      string descr = "A New Order";
+      double prc = 9.99;
+      string dat = "7 March 1983";
+
+      Order newOrder = new Order(titl, descr, prc, dat);
+
+      Assert.AreEqual( "titl", newOrder.Title );
+    }
+
+    // [TestMethod]
+    // public void OrderConstructor_CorrectlySetsPropertiesInConstructor_CorrectPropertyValues()
+    // {
+    //   string titl = "New Order";
+    //   string descr = "A New Order";
+    //   double prc = 9.99;
+    //   string dat = "7 March 1983";
+
+    //   Order newOrder = new Order(titl, descr, prc, dat);
+
+    //   // Assert.AreEqual( titl, newOrder.Title );
+    //   Assert.AreEqual( descr, newOrder.Description );
+    //   // Assert.AreEqual( prc, newOrder.Price );
+    //   // Assert.AreEqual( dat, newOrder.Date );
+    // }
+
+    // [TestMethod]
+    // public void OrderConstructor_CorrectlySetsPropertiesInConstructor_CorrectPropertyValues()
+    // {
+    //   string titl = "New Order";
+    //   string descr = "A New Order";
+    //   double prc = 9.99;
+    //   string dat = "7 March 1983";
+
+    //   Order newOrder = new Order(titl, descr, prc, dat);
+
+    //   // Assert.AreEqual( titl, newOrder.Title );
+    //   // Assert.AreEqual( descr, newOrder.Description );
+    //   Assert.AreEqual( prc, newOrder.Price );
+    //   // Assert.AreEqual( dat, newOrder.Date );
+    // }
+
+    // [TestMethod]
+    // public void OrderConstructor_CorrectlySetsPropertiesInConstructor_CorrectPropertyValues()
+    // {
+    //   string titl = "New Order";
+    //   string descr = "A New Order";
+    //   double prc = 9.99;
+    //   string dat = "7 March 1983";
+
+    //   Order newOrder = new Order(titl, descr, prc, dat);
+
+    //   // Assert.AreEqual( titl, newOrder.Title );
+    //   // Assert.AreEqual( descr, newOrder.Description );
+    //   // Assert.AreEqual( prc, newOrder.Price );
+    //   Assert.AreEqual( dat, newOrder.Date );
+    // }
+
 
   }
 }
