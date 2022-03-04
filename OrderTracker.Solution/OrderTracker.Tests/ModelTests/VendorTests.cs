@@ -47,7 +47,7 @@ namespace OrderTracker.Tests
     public void VendorConstructor_ChecksThatPreviousTestedInstancesOfVendorsAreStoredInVendorsField_VendorsCountEquals3AndAllPropertiesInAll3InstancesHaveExpectedValues()
     {
 
-      Assert.AreEqual(4, Vendor.GetAll().Count);
+      Assert.AreEqual(3, Vendor.GetAll().Count);
       Assert.AreEqual("a name0", Vendor.GetAll()[0].Name);
       Assert.AreEqual("a description0", Vendor.GetAll()[0].Description);
       Assert.AreEqual(0, Vendor.GetAll()[0].Orders.Count);
