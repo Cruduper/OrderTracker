@@ -1,11 +1,24 @@
-<h1>Add an artist</h1>
-<p>Add an artist here:</p>
+@{
+  Layout = "_Layout";
+}
 
-<form action="/artists" method="post">
-  <label for="artistName">Artist:</label>
-  <input id="artistName" name="artistName" type="text">
-  <button type="submit" class="btn btn-success">Add?</button>
+<h2>Add a vendor</h2>
+
+<form action="/vendors" method="post">
+  <div> 
+    <label for="vendorName">Vendor Name:</label>
+    <input id="vendorName" name="vendorName" type="text">
+  </div>
+
+  <div>
+    <label for="vendorDescr">Description:</label>
+    <input id="vendorDescr" name="vendorDescr" type="text">
+  </div>
+
+  <button type="submit" class="btn btn-success">Add Vendor</button>
 </form>
-<br>
-<p><a href="/">Back home</a></p>
-<p><a href="/artists">Back to artists.</a></p>
+
+<div class="nav-bar">
+  <a href="/" class="nav-links">Back home</a>
+  <a href="/vendors" class="nav-links">Back to vendors list.</a>
+</div>
