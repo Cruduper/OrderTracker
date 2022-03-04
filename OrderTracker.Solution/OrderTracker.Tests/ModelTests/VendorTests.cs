@@ -28,7 +28,7 @@ namespace OrderTracker.Tests
 
       Vendor newVendor = new Vendor(nam, descr);
 
-      Assert.AreEqual("nam", newVendor.Name);
+      Assert.AreEqual(nam, newVendor.Name);
     }
   }
 }
