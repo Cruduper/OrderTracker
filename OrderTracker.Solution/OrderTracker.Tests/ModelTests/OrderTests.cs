@@ -39,10 +39,7 @@ namespace OrderTracker.Tests
 
       Order newOrder = new Order(titl, descr, prc, dat);
 
-      // Assert.AreEqual( titl, newOrder.Title );
       Assert.AreEqual( descr, newOrder.Description );
-      // Assert.AreEqual( prc, newOrder.Price );
-      // Assert.AreEqual( dat, newOrder.Date );
     }
 
     [TestMethod]
@@ -55,10 +52,7 @@ namespace OrderTracker.Tests
 
       Order newOrder = new Order(titl, descr, prc, dat);
 
-      // Assert.AreEqual( titl, newOrder.Title );
-      // Assert.AreEqual( descr, newOrder.Description );
       Assert.AreEqual( prc, newOrder.Price );
-      // Assert.AreEqual( dat, newOrder.Date );
     }
 
     [TestMethod]
@@ -71,9 +65,6 @@ namespace OrderTracker.Tests
 
       Order newOrder = new Order(titl, descr, prc, dat);
 
-      // Assert.AreEqual( titl, newOrder.Title );
-      // Assert.AreEqual( descr, newOrder.Description );
-      // Assert.AreEqual( prc, newOrder.Price );
       Assert.AreEqual( dat, newOrder.Date );
     }
 
