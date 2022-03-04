@@ -1,0 +1,12 @@
+.nav-links  {
+  margin: 0, 20px, 0, .5em;
+}
+
+.nav-bar  {
+  display: flex;
+}
+
+label {
+  color: red;
+  width: 7em;
+}
