@@ -44,20 +44,25 @@ namespace OrderTracker.Tests
     }
 
     [TestMethod]
-    public void VendorConstructor_ChecksThatPreviousTestedInstancesOfVendorsAreStoredInVendorsField_VendorsCountEquals3AndAllPropertiesInAll3InstancesHaveExpectedValues()
-    {
+    // public void ClearAll_ClearsAllVendorInstancesInVendorsField_0()
+    // {
 
-      Assert.AreEqual(3, Vendor.GetAll().Count);
-      Assert.AreEqual("a name0", Vendor.GetAll()[0].Name);
-      Assert.AreEqual("a description0", Vendor.GetAll()[0].Description);
-      Assert.AreEqual(0, Vendor.GetAll()[0].Orders.Count);
-      Assert.AreEqual("a name1", Vendor.GetAll()[1].Name);
-      Assert.AreEqual("a description1", Vendor.GetAll()[1].Description);
-      Assert.AreEqual(0, Vendor.GetAll()[1].Orders.Count);
-      Assert.AreEqual("a name2", Vendor.GetAll()[2].Name);
-      Assert.AreEqual("a description2", Vendor.GetAll()[2].Description);
-      Assert.AreEqual(0, Vendor.GetAll()[2].Orders.Count);
-    }
+    // }
+    // [TestMethod]
+    // public void VendorConstructor_ChecksThatPreviousTestedInstancesOfVendorsAreStoredInVendorsField_VendorsCountEquals3AndAllPropertiesInAll3InstancesHaveExpectedValues()
+    // {
+
+    //   Assert.AreEqual(3, Vendor.GetAll().Count);
+    //   Assert.AreEqual("a name0", Vendor.GetAll()[0].Name);
+    //   Assert.AreEqual("a description0", Vendor.GetAll()[0].Description);
+    //   Assert.AreEqual(0, Vendor.GetAll()[0].Orders.Count);
+    //   Assert.AreEqual("a name1", Vendor.GetAll()[1].Name);
+    //   Assert.AreEqual("a description1", Vendor.GetAll()[1].Description);
+    //   Assert.AreEqual(0, Vendor.GetAll()[1].Orders.Count);
+    //   Assert.AreEqual("a name2", Vendor.GetAll()[2].Name);
+    //   Assert.AreEqual("a description2", Vendor.GetAll()[2].Description);
+    //   Assert.AreEqual(0, Vendor.GetAll()[2].Orders.Count);
+    // }
 
     // [TestMethod]
     // public void ClearAll_ClearsPreviousInstancesOf
