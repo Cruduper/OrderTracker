@@ -74,7 +74,7 @@ namespace OrderTracker.Tests
       // Assert.AreEqual( titl, newOrder.Title );
       // Assert.AreEqual( descr, newOrder.Description );
       // Assert.AreEqual( prc, newOrder.Price );
-      Assert.AreEqual( "dat", newOrder.Date );
+      Assert.AreEqual( dat, newOrder.Date );
     }
 
 
