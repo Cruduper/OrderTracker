@@ -15,5 +15,10 @@ namespace OrderTracker.Models
       Description = descr;
       Orders = new List<Order>{};
     }
+
+    public ClearAll()
+    {
+      _vendors.Clear();
+    }
   }
 }
