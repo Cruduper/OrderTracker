@@ -26,7 +26,7 @@ namespace OrderTracker.Tests
 
       Order newOrder = new Order(titl, descr, prc, dat);
 
-      Assert.AreEqual( "titl", newOrder.Title );
+      Assert.AreEqual( titl, newOrder.Title );
     }
 
     // [TestMethod]
