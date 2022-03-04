@@ -70,7 +70,7 @@ namespace OrderTracker.Tests
       Vendor newVendor1 = new Vendor("a name1", "a description1");
 
       List<Vendor> emptyList = new List<Vendor>{};
-      //Vendor.ClearAll();
+      Vendor.ClearAll();
 
       CollectionAssert.AreEqual(emptyList, Vendor.GetAll());
     }
