@@ -13,12 +13,18 @@ namespace OrderTracker.Models
     {
       Name = name;
       Description = descr;
+      _vendors.Add(this);
       Orders = new List<Order>{};
     }
 
-    public ClearAll()
+    public static void ClearAll()
     {
       _vendors.Clear();
+    }
+
+    public static List<Vendor> GetAll()
+    {
+      return _vendors;
     }
   }
 }
