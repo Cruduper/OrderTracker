@@ -30,5 +30,16 @@ namespace OrderTracker.Tests
 
       Assert.AreEqual(nam, newVendor.Name);
     }
+
+        [TestMethod]
+    public void VendorConstructor_SetsDescriptionPropertyCorrectly_CorrectDescriptionText()
+    {
+      string nam = "a name";
+      string descr = "a description";
+
+      Vendor newVendor = new Vendor(nam, descr);
+
+      Assert.AreEqual("descr", newVendor.Description);
+    }
   }
 }
