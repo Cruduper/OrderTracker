@@ -17,7 +17,7 @@ namespace OrderTracker.Tests
     {
       Vendor newVendor = new Vendor("a name", "a description");
 
-      Assert.AreEqual(typeof(int), newVendor.GetType());
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
   }
 }
