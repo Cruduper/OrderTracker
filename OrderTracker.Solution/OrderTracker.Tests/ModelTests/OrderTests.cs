@@ -30,7 +30,7 @@ namespace OrderTracker.Tests
     }
 
     [TestMethod]
-    public void OrderConstructor_CorrectlySetsPropertiesInConstructor_CorrectPropertyValues()
+    public void OrderConstructor_CorrectlySetDescriptionInConstructor_CorrectDescriptionValue()
     {
       string titl = "New Order";
       string descr = "A New Order";
@@ -45,24 +45,24 @@ namespace OrderTracker.Tests
       // Assert.AreEqual( dat, newOrder.Date );
     }
 
+    [TestMethod]
+    public void OrderConstructor_CorrectlySetsPriceInConstructor_CorrectPriceValue()
+    {
+      string titl = "New Order";
+      string descr = "A New Order";
+      double prc = 9.99;
+      string dat = "7 March 1983";
+
+      Order newOrder = new Order(titl, descr, prc, dat);
+
+      // Assert.AreEqual( titl, newOrder.Title );
+      // Assert.AreEqual( descr, newOrder.Description );
+      Assert.AreEqual( "prc", newOrder.Price );
+      // Assert.AreEqual( dat, newOrder.Date );
+    }
+
     // [TestMethod]
-    // public void OrderConstructor_CorrectlySetsPropertiesInConstructor_CorrectPropertyValues()
-    // {
-    //   string titl = "New Order";
-    //   string descr = "A New Order";
-    //   double prc = 9.99;
-    //   string dat = "7 March 1983";
-
-    //   Order newOrder = new Order(titl, descr, prc, dat);
-
-    //   // Assert.AreEqual( titl, newOrder.Title );
-    //   // Assert.AreEqual( descr, newOrder.Description );
-    //   Assert.AreEqual( prc, newOrder.Price );
-    //   // Assert.AreEqual( dat, newOrder.Date );
-    // }
-
-    // [TestMethod]
-    // public void OrderConstructor_CorrectlySetsPropertiesInConstructor_CorrectPropertyValues()
+    // public void OrderConstructor_CorrectlySetsDateInConstructor_CorrectDateValue()
     // {
     //   string titl = "New Order";
     //   string descr = "A New Order";
