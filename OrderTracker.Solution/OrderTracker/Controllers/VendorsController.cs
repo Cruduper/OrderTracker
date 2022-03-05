@@ -26,5 +26,16 @@ namespace OrderTracker.Controllers
     {
       return View();
     }
+
+    [HttpGet("/vendors/{id}")]
+    public ActionResult Show(int Id)
+    {
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      Vendor currVendor = Vendor.GetAll()[Id]; 
+      List<Order> vendorsOrders = currVendor.Orders;
+      model.Add("vendor", currVendor);
+      model.Add("orders", vendorsOrders);
+      return View(model);
+    }
   }
 }
