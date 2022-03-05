@@ -35,6 +35,7 @@ namespace OrderTracker.Controllers
       List<Order> vendorsOrders = currVendor.Orders;
       model.Add("vendor", currVendor);
       model.Add("orders", vendorsOrders);
+      model.Add("id", Id);
       return View(model);
     }
   }
