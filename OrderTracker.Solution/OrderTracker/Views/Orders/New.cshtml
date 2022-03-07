@@ -1,0 +1,38 @@
+@{
+  Layout = "_Layout";
+}
+
+@using OrderTracker.Models;
+
+<h2>Add an order for @Vendor.GetAll()[@Model].Name</h2>
+
+<form action="/vendors/@Model/orders" method="post">
+  <div> 
+    <label for="orderTitle" class="label">Order Title:</label>
+    <input id="orderTitle" name="orderTitle" type="text">
+  </div>
+
+  <div>
+    <label for="orderDescr" class="label">Description:</label>
+    <input id="orderDescr" name="orderDescr" type="text">
+  </div>
+
+  <div>
+    <label for="orderPrice" class="label">Price:</label>
+    <input id="orderPrice" name="orderPrice" type="text">
+  </div>
+
+  <div>
+    <label for="orderDate" class="label">Date:</label>
+    <input id="orderDate" name="orderDate" type="date">
+  </div>
+
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model">
+
+  <button type="submit" class="btn btn-success">Add order</button>
+</form>
+
+<div class="nav-bar">
+  <a href="/" class="nav-links">Back home</a>
+  <a href="/vendors" class="nav-links">Back to vendors list.</a>
+</div>
