@@ -65,7 +65,6 @@ namespace OrderTracker.Tests
     [TestMethod]
     public void ClearAll_ClearsAllVendorInstancesInVendorsField_0()
     {
-    
       Vendor newVendor0 = new Vendor("a name0", "a description0");
       Vendor newVendor1 = new Vendor("a name1", "a description1");
 
@@ -74,7 +73,5 @@ namespace OrderTracker.Tests
 
       CollectionAssert.AreEqual(emptyList, Vendor.GetAll());
     }
-
-    
   }
 }
