@@ -1,0 +1,24 @@
+@{
+  Layout = "_Layout";
+}
+
+@using OrderTracker.Models
+
+<h2>Details for <span class="vendor-name">@Vendor.GetAll()[Model["vendorId"]]</span>'s order titled: <span class="vendor-name">@Vendor.GetAll()[Model["vendorId"]].Orders[Model["orderId"]].Title</span></h2>
+<ul>
+  <li>
+    Description: @Vendor.GetAll()[Model["vendorId"]].Orders[Model["orderId"]].Description
+  </li>
+  <li>
+    Price: @Vendor.GetAll()[Model["vendorId"]].Orders[Model["orderId"]].Price
+  </li>
+  <li>
+    Date: @Vendor.GetAll()[Model["vendorId"]].Orders[Model["orderId"]].Date
+  </li>
+</ul>
+
+<div class="nav-bar">
+  <a href='/vendors/@Model["vendorId"]/orders/new' class="nav-links">Add a new order</a>
+  <a href='/vendors' class="nav-links">Return to vendor list</a>
+  <a href='/' class="nav-links">Return to Main Page</a>
+</div>
