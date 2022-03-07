@@ -1,12 +1,27 @@
 .nav-links  {
-  margin: 0, 20px, 0, .5em;
+  margin: 1em 2em 1em;
 }
 
 .nav-bar  {
   display: flex;
 }
 
-label {
-  color: red;
+.vendor-name  {
+  font-size: 105%;
+  color: #660006;
+}
+
+.label {
+  display: inline-block;
+  font-weight: bold;
   width: 7em;
+  color: #D13;
+}
+
+body  {
+  background-color: #DDD;
+}
+
+a {
+  color: rgb(180, 84, 100);
 }

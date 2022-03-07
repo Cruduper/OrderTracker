@@ -27,7 +27,7 @@ namespace OrderTracker.Controllers
       return View();
     }
 
-    [HttpGet("/vendors/{Id}")]
+    [HttpGet("/vendors/{vendorId}")]
     public ActionResult Show(int vendorId)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
@@ -40,7 +40,7 @@ namespace OrderTracker.Controllers
     }
 
     [HttpPost("vendors/{vendorId}/orders")]
-    public ActionResult Create(int vendorId, string orderTitle, string orderDescr, double orderPrice, string orderDate)
+    public ActionResult Create(int vendorId, string orderTitle, string orderDescr, int orderPastryNum, int orderBreadNum, string orderDate)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor currVendor = (Vendor.GetAll())[vendorId];
@@ -48,7 +48,7 @@ namespace OrderTracker.Controllers
       model.Add("vendor", currVendor);
       model.Add("orders", vendorsOrders);
       model.Add("id", vendorId);
-      Order newOrder = new Order(orderTitle, orderDescr, orderPrice, orderDate);
+      Order newOrder = new Order(orderTitle, orderDescr, orderPastryNum, orderBreadNum, orderDate);
       currVendor.Orders.Add(newOrder);
       return View("Show", model);
     }

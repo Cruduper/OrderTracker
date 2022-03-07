@@ -4,13 +4,13 @@
 
 @using OrderTracker.Models
 
-<h2>Details for <span class="vendor-name">@Vendor.GetAll()[Model["vendorId"]]</span>'s order titled: <span class="vendor-name">@Vendor.GetAll()[Model["vendorId"]].Orders[Model["orderId"]].Title</span></h2>
+<h2>Details for <a href='/vendors/@Model["vendorId"]'><span class="vendor-name">@Vendor.GetAll()[Model["vendorId"]].Name</span></a>'s order titled: <span class="vendor-name">@Vendor.GetAll()[Model["vendorId"]].Orders[Model["orderId"]].Title</span></h2>
 <ul>
   <li>
     Description: @Vendor.GetAll()[Model["vendorId"]].Orders[Model["orderId"]].Description
   </li>
   <li>
-    Price: @Vendor.GetAll()[Model["vendorId"]].Orders[Model["orderId"]].Price
+    Price: $@Vendor.GetAll()[Model["vendorId"]].Orders[Model["orderId"]].Price
   </li>
   <li>
     Date: @Vendor.GetAll()[Model["vendorId"]].Orders[Model["orderId"]].Date

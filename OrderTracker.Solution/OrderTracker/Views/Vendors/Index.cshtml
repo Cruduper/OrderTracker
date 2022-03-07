@@ -8,12 +8,15 @@
 
 @if (@Model.Count == 0)
 {
-  <h3>No Vendors have been added yet!</h3>
+  <h3 class="mt-4">No Vendors have been added yet!</h3>
 }
 
 @foreach (Vendor vendor in Model)
 {
-  <h3><a href='/vendors/@Model.IndexOf(vendor)'>@vendor.Name</a></h3>
+  <h3 class="mt-4"><a href='/vendors/@Model.IndexOf(vendor)'>@vendor.Name</a></h3>
 }
 
-<p><a href='/'>Back Home?</a></p>
+<div class="nav-bar">
+  <a href="/vendors/new" class="nav-link">Add a vendor</a>
+  <a href='/' class="nav-link">Back Home</a>
+</div>

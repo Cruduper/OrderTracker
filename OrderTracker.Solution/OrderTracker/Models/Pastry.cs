@@ -23,7 +23,7 @@ namespace OrderTracker.Models
 
       foreach (Pastry paste in pastryMountain)
       {
-        if( (pastryInstance % 3 == 0) || (pastryInstance % 6 == 0) )
+        if( (pastryInstance % 3 == 0) )
           paste.Price = 1;
 
         totalPrice += paste.Price;
