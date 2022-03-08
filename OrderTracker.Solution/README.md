@@ -10,12 +10,13 @@
 * _.NET_
 * _MSTest_
 * _Markdown_
+* _Razor View Engine_
 
 ## Description
 
-_This was built as the second C# project in my coding bootcamp. This application is the successor to our first C# project called Pierre's bakery. It uses classes and testing from the previous project and expands upon it by using RESTful routing and Razor to dynamically create objects, URL links and page text.  It also explores classes, using directives, testing, methods, encapsulation, and abstraction.
+This was built as the second C# project in my coding bootcamp. This application is the successor to our first C# project called Pierre's bakery. It uses classes and testing from the previous project and expands upon it by using the MVC design pattern, RESTful routing, and Razor View Engine to dynamically create objects, URL links, and page text. It also explores classes, using directives, testing, methods, encapsulation, and abstraction.
 
-The user create new vendors, and add multiple orders specific to each vendor, and view details about individual vendors or orders on dynamically created pages._
+The user create new vendors, and add multiple orders specific to each vendor, and view details about individual vendors or orders on dynamically created pages.
 
 
 ## Setup/Installation Requirements
@@ -36,7 +37,7 @@ The user create new vendors, and add multiple orders specific to each vendor, an
 ## Known Bugs and issues
 
 * _No known bugs_
-* _Issue: code would have been marginally easier to read and easier to extend had I given my Vendor and Order classes "id" properties in order to easily identify specific vendors and orders. As this is a learning project and not production code, I chose to purposely make the assignment more challenging and truly test my newfound knowledge of Razor and logical program flow by omitting these extremely useful properties.
+* Issue: code would have been marginally easier to read and more extensible had I given my Vendor and Order classes "id" properties in order to easily identify each specific vendor and order. As this is an early C# learning project and not production code, I chose to purposely make the assignment more challenging and truly test my newfound knowledge of Razor and logical program flow by omitting these extremely useful properties.
 
 ## License
 
